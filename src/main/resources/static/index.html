@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script   src="https://code.jquery.com/jquery-3.6.1.js"   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    
+    <title>FrontEnd Partyroom</title>
+</head>
+
+<body>
+    <h1>Alquiler de Salones</h1>
+
+    <div>
+        <h3>Category</h3>
+        <div>
+            <div>
+                <label>Id</label>
+                <input type="number"  id="id">
+            </div>
+
+            <div>
+                <label>Name Category</label>
+                <input type="text" id="nombreCategoria" placeholder="Insert name category" required>
+            </div>
+            <div>
+                <label>Description Category</label>
+                <input type="text" id="descripcionCategoria" placeholder="Insert description category" required>
+            </div>
+        </div>
+        <div>
+            <button onclick="traerInformacionCategoria()">Consultar</button>
+            <button onclick="guardarInformacionCategoria()">Insertar</button>
+            <button onclick="modificarInformacionCategoria()">Modificar</button>
+            <button onclick="consultarId()">ConsultarId</button> 
+        <!--
+        </div>   
+    </div>
+
+    
+    <div>
+        <h1>Partyroom</h1>
+        <div>
+            <input type="text"   id="nombrePartyroom" placeholder="Name Partyroom">
+            <input type="text"   id="duenoPartyroom" placeholder="Owner Partyroom">
+            <input type="number" id="capacidadPartyroom" placeholder="Capacity Partyroom">
+            <input type="text"   id="descripcionPartyroom" placeholder="Description Partyroom">
+            <input type="number" id="idCategoria" placeholder="Id Category">
+        </div>
+        <div>
+            <button onclick="traerInformacionPartyroom()">Consultar</button>
+            <button onclick="guardarInformacionPartyroom()">Insertar</button>
+            <button onclick="modificarInformacionPartyroom()">Modificar</button>
+            <button onabort="borrarInformacionPartyroom()">Borrar</button> 
+        </div>
+    </div>
+
+    
+    
+    <div>
+        <h1>Cliente</h1>
+        <div>
+            <input type="text"   id="nombreCliente" placeholder="Name Client">
+            <input type="email"   id="emailCliente" placeholder="emailClient">
+            <input type="password"   id="claveCliente" placeholder="PasswordClient">
+            <input type="number" id="edadCliente" placeholder="AgeCliente">
+        </div>
+        <div>
+            <button onclick="traerInformacionCliente()">Consultar</button>
+            <button onclick="guardarInformacionCliente()">Insertar</button>
+            <button onclick="modificarInformacionCliente()">Modificar</button>
+            <button onabort="borrarInformacionCliente()">Borrar</button> 
+        </div>
+    </div>
+
+    
+    <div>
+        <h1>Mensajes</h1>
+        <div>
+            <input type="text" id="mensageCliente" placeholder="MessageClient">
+            <input type="number" id="idClienteM" placeholder="Codigo Cliente">
+            <input type="number" id="idPartyroomM" placeholder="Codigo Partyroom">
+        </div>
+        <div>
+            <button onclick="traerInformacionMensaje()">Consultar</button>
+            <button onclick="guardarInformacionMensaje()">Insertar</button>
+            <button onclick="modificarInformacionMensaje()">Modificar</button>
+            <button onabort="borrarInformacionMensaje()">Borrar</button> 
+        </div>
+    </div>
+
+    
+    
+    <div>
+        <h1>Reservaciones</h1>
+        <div>
+            <input type="date" id="fechaInicio" placeholder="StartDate">
+            <input type="date" id="fechaFinal" placeholder="DevolutionDate">
+            <input type="number" id="idClienteR" placeholder="Codigo Cliente">
+            <input type="number" id="idPartyroomR" placeholder="Codigo Partyroom">
+        </div>
+        <div>
+            <button onclick="traerInformacionReservacion()">Consultar</button>
+            <button onclick="guardarInformacionReservacion()">Insertar</button>
+            <button onclick="modificarInformacionReservacion()">Modificar</button>
+            <button onabort="borrarInformacionReservacion()">Borrar</button> 
+        </div>
+    </div>
+
+    <div>
+        <h1>Administracion</h1>
+        <div>
+            <input type="text" id="nombreAdmin" placeholder="NameAdmin">
+            <input type="email" id="correoAdmin" placeholder="emailAdmin">
+            <input type="password" id="passwordAdmin" placeholder="PasswordAdmin">
+        </div>
+        <div>
+            <button onclick="traerInformacionAdministrador()">Consultar</button>
+            <button onclick="guardarInformacionAdministrador()">Insertar</button>
+            <button onclick="modificarInformacionAdministrador()">Modificar</button>
+            <button onabort="borrarInformacionAdministrador()">Borrar</button> 
+        </div>   
+    </div>
+-->
+     
+    <div id="resultado">
+    
+    </div>
+
+
+   
+</body>
+
+
+
+</html>
